@@ -12,6 +12,6 @@ export class Task {
   @Column()
   description: string;
 
-  @Column({ type: 'enum', enum: TaskStatus, default: TaskStatus.OPEN })
+  @Column()
   status: TaskStatus;
 }
